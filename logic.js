@@ -3,6 +3,7 @@ let btn =Array.from( document.getElementsByClassName("btn") )
 let restartBtn = document.getElementById("btn-restart")
 // let spaces = Array(9).fill(null)// to wheter the elment was visited earlier
 
+
 let spaces = Array(9).fill("")
 const x_turn ="X"
 const o_turn ="O"
@@ -75,6 +76,11 @@ restartBtn.addEventListener('click', function()
     drawMsg.textContent= ''
     xColor.style.backgroundColor = "#d90368"
     oColor.style.backgroundColor = "#29dbba"
+
+    btn.forEach(function(box)
+{
+    box.style.backgroundColor ="#29dbba"
+})
 }
 )
 
@@ -97,18 +103,20 @@ function playerHasWon()
     for(let i = 0 ; i <winCombo.length ; i++)
     {      
            
-           let a = winCombo[i][0]//storing the id 
-            //    console.log(a)
-           a = spaces[a]
-           let b = winCombo[i][1]
-           b = spaces[b]
-           let  c = winCombo[i][2]
-           c = spaces[c]
+           let aID = winCombo[i][0]//storing the id 
+           let a = spaces[aID]
+           let bID = winCombo[i][1]
+           let b = spaces[bID]
+           let cID = winCombo[i][2]
+           let c = spaces[cID]
            
            if(a===currentPlayer && b===currentPlayer && c===currentPlayer)
            {
             winStatus = true
             spaces.fill("true")
+            btn[aID].style.backgroundColor="#d90368"
+            btn[bID].style.backgroundColor="#d90368"
+            btn[cID].style.backgroundColor="#d90368"
             
             break
            }
