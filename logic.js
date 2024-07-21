@@ -114,9 +114,9 @@ function playerHasWon()
            {
             winStatus = true
             spaces.fill("true")
-            btn[aID].style.backgroundColor="#d90368"
-            btn[bID].style.backgroundColor="#d90368"
-            btn[cID].style.backgroundColor="#d90368"
+            btn[aID].style.backgroundColor= '#d90368'
+            btn[bID].style.backgroundColor= '#d90368'
+            btn[cID].style.backgroundColor= '#d90368'
             
             break
            }

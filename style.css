@@ -24,11 +24,17 @@ button{
     font-size: 60px;
     background-color:#29dbba ;
     outline: none;
+    transition: background-color 0.3s;
 }
-button:hover{
-    background-color:#d90368 ;
+/* button:hover{
+    background-color:#d90368  ;
+    box-shadow: 0 0 5px #d90368,
+                0 0 35px #d90368,
+                0 0 0px #d90368,
+                0 0 0px #d90368 ;
+    
     cursor: pointer;
-}
+} */
 #btn-restart{
     font-size: 16px;
     font-weight: bold;
@@ -59,6 +65,7 @@ span{
 }
 span:hover{
     color: white;
+    text-shadow: 0 0 3px black;
     
 }
 
@@ -97,4 +104,11 @@ span:hover{
     margin-bottom: 10px;
     color: white;
     font-size: 25px;
+}
+#color{
+    background-color:#d90368  ;
+    box-shadow: 0 0 5px #d90368,
+                0 0 35px #d90368,
+                0 0 0px #d90368,
+                0 0 0px #d90368 ;
 }
