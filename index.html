@@ -7,6 +7,15 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
+
+    
+  <p id="turn-design">TURN</p>
+  <div id="box">
+       <div id="x-turn" class="turns">X</div>
+       <div id="o-turn" class="turns">O</div>
+  </div>
+
+   <div></div>
     <div class="wrapper">
         <div class="container">
              <!-- these container will contain all the buttons -->
@@ -19,13 +28,13 @@
             <button class="btn" id="6"></button>
             <button class="btn" id="7"></button>
             <button class="btn" id="8"></button>
-
         </div>
 
         <!-- <button id="btn-restart">RESTART</button> -->
     </div>
     <button id="btn-restart">RESTART</button>
     <p id="won-msg"></p>
+    <p id="draw-msg"></p>
 
 
 <script src="logic.js"></script>

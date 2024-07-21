@@ -6,7 +6,7 @@ body{
     background-color: #2b2d42;
 }
 .wrapper{
-    margin-top: 100px;
+      margin-top: 10px;
       display: flex;
       justify-content: center;
       
@@ -46,4 +46,55 @@ button:hover{
     box-shadow: inset 140px 0 0 0 #000000;
     color: white;
     /* background-color: #7209b7; */
+}
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: #00afb9;
+
+}
+span{
+    color: #d90368;
+}
+span:hover{
+    color: white;
+    
+}
+
+#draw-msg{
+    color: #dcf1de;
+    font-family: sans-serif;
+}
+
+
+#box{
+    display: flex;
+    justify-content: center;
+}
+.turns
+{
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 12px 30px;
+    color: #2b2d42;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+#x-turn
+{
+    background-color: #d90368;
+}
+#o-turn
+{
+    background-color: #29dbba;
+}
+#turn-design
+{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
 }
